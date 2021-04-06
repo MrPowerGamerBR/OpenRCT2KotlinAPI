@@ -5,7 +5,7 @@ import com.mrpowergamerbr.openrct2kotlinapi.plugin.OpenRCT2Plugin
 import com.mrpowergamerbr.openrct2kotlinapi.plugin.PluginType
 
 fun main() {
-	// Based of https://github.com/OpenRCT2/plugin-samples/blob/master/peep-tools.js
+	// Based on https://github.com/OpenRCT2/plugin-samples/blob/master/peep-tools.js
 	PeepToolsPlugin().init()
 }
 

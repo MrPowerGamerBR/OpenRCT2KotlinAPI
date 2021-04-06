@@ -4,6 +4,7 @@ import com.mrpowergamerbr.openrct2kotlinapi.Context
 import com.mrpowergamerbr.openrct2kotlinapi.entities.GameMap
 import com.mrpowergamerbr.openrct2kotlinapi.network.Network
 import com.mrpowergamerbr.openrct2kotlinapi.entities.Park
+import com.mrpowergamerbr.openrct2kotlinapi.ui.UserInterface
 
 open class OpenRCT2Plugin(
 	val name: String,
@@ -17,6 +18,10 @@ open class OpenRCT2Plugin(
 	val park = Park(org.openrct2.park)
 	val map = GameMap(org.openrct2.map)
 	val network = Network(org.openrct2.network)
+	val ui = if (org.openrct2.ui == undefined)
+		null
+	else
+		UserInterface(org.openrct2.ui)
 
 	fun init() {
 		println("Initializing plugin $name")

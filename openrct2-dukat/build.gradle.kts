@@ -16,9 +16,7 @@ dependencies {
 
 kotlin {
     js(LEGACY) {
-        browser {
-        }
-        // binaries.executable()
+        browser {}
     }
 }
 

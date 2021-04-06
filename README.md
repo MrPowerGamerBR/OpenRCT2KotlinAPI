@@ -106,6 +106,8 @@ class MyFirstPlugin : OpenRCT2Plugin(
 }
 ```
 
+You can check other samples in the `samples` folder!
+
 ### Running the Plugin in OpenRCT2
 Running the plugin after compiling with Gradle is easy, just copy the JavaScript files from the `distributions` folder to OpenRCT2's plugins folder.
 

@@ -687,18 +687,6 @@ external interface Ui {
     fun registerShortcut(desc: ShortcutDesc)
 }
 
-external interface TextInputDesc {
-    var title: String
-    var description: String
-    var initialValue: String?
-        get() = definedExternally
-        set(value) = definedExternally
-    var maxLength: Number?
-        get() = definedExternally
-        set(value) = definedExternally
-    var callback: (value: String) -> Unit
-}
-
 external interface FileBrowseDesc {
     var type: String /* "load" */
     var fileType: String /* "game" | "heightmap" */
